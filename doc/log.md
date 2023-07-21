@@ -21,6 +21,10 @@ According to [Setuptools Documentation](https://setuptools.pypa.io/en/latest/ind
 python3 -m pip install --editable .
 ```
 
+## Running the application
+
+Assuming the environment in `venv` is active
+
 - Running the application in debug mode:
 ```
 quart --app thijsj_simple_web:app --debug run
