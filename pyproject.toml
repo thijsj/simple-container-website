@@ -8,3 +8,7 @@ version = "0.0.1"
 dependencies = [
     "quart",
 ]
+
+[project.scripts]
+hello = "thijsj_simple_web:app"
+
