@@ -30,3 +30,31 @@ Assuming the environment in `venv` is active
 quart --app thijsj_simple_web:app --debug run
 ```
 
+## Creating Docker image
+
+Create [Dockerfile](../Dockerfile).
+
+- Create a Docker image, using tag "simple-container-website:0.0.1"
+
+```
+docker build -t simple-container-website:0.0.1 .
+```
+
+- Tagging it with my Docker repository namespace "thijsj"
+```
+docker tag simple-container-website:0.0.1 thijsj/simple-container-website:0.0.1
+```
+
+- Push image to my repository
+```
+docker push thijsj/simple-container-website:0.0.1
+```
+
+## Running
+
+Starting this image on port 5000
+```
+docker run -d --name SCW -p 5000:8080 thijsj/simple-container-website:0.0.1
+```
+
+
