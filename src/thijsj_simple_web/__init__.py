@@ -22,10 +22,11 @@
 ## end license ##
 
 from quart import Quart
+from quart.templating import render_template
 
 app = Quart(__name__)
 
 @app.route('/')
-async def hello():
-    return 'Hoi'
+async def index():
+    return await render_template('index.html', title="Index <pagina>")
 

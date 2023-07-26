@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "thijsj-simple-web"
+name = "thijsj_simple_web"
 version = "0.0.1"
 dependencies = [
     "quart",
