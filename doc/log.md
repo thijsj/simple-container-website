@@ -45,7 +45,7 @@ docker build -t simple-container-website:0.0.1 .
 docker tag simple-container-website:0.0.1 thijsj/simple-container-website:0.0.1
 ```
 
-- Push image to my repository
+- Push image to [my repository](https://hub.docker.com/repositories/thijsj)
 ```
 docker push thijsj/simple-container-website:0.0.1
 ```
@@ -56,5 +56,7 @@ Starting this image on port 5000
 ```
 docker run -d --name SCW -p 5000:8080 thijsj/simple-container-website:0.0.1
 ```
+
+
 
 
